@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuantumBase Vocational 360 | AI & Quantum Decision Platform for Vocational Education</title>
+  <meta name="description" content="AI-enabled career counselling and family decision-support platform for vocational education, powered by simulated quantum annealing and multi-objective Pareto optimization.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="header-nav">
+    <div class="nav-container">
+      <div class="brand-wrapper" id="brandLogo">
+        <div class="quantum-logo-orb">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>QuantumBase 360</h1>
+          <span id="brandSubtitle">AI & Quantum Vocational Consensus System</span>
+        </div>
+      </div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#profiler" id="navProfiler" class="active">Dual Profiler</a></li>
+          <li><a href="#quantum-engine" id="navQuantum">Quantum Engine</a></li>
+          <li><a href="#pathways" id="navPathways">Vocational Pathways</a></li>
+          <li><a href="#roi-simulator" id="navRoi">10-Yr ROI Model</a></li>
+          <li><a href="#ivr-simulator" id="navIvr">Voice / IVR Call</a></li>
+          <li><a href="#training-hubs" id="navHubs">Training Hubs</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="consensus-live-pill" title="Real-time Family Consensus Equilibrium Score">
+          <span class="pulse-dot"></span>
+          <span id="navConsensusBadge">Consensus: 96.2%</span>
+        </div>
+        <button id="soundToggleBtn" class="lang-select-btn" title="Toggle audio feedback">
+          🔊 Audio On
+        </button>
+        <select id="langSelect" class="lang-select-btn" title="Choose Platform Language">
+          <option value="te" selected>తెలుగు (Telugu)</option>
+          <option value="en">English</option>
+          <option value="hi">हिंदी (Hindi)</option>
+          <option value="mr">मराठी (Marathi)</option>
+          <option value="ta">தமிழ் (Tamil)</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <span class="section-tag" id="heroTag">Next-Gen Vocational Intelligence</span>
+        <h2 id="heroTitle">Optimizing Vocational Futures. Reassuring Families.</h2>
+        <p class="hero-subtitle" id="heroSubtitle">
+          Bridging the gap between <strong>student passion</strong>, <strong>family financial security</strong>, and <strong>industry demand</strong> using a multi-objective Quantum-Annealing Consensus Engine.
+        </p>
+
+        <div class="hero-badges-row">
+          <div class="hero-badge" id="badgeTrades">⚡ <strong>1,420+</strong> NSQF Aligned Trades</div>
+          <div class="hero-badge" id="badgePlacement">🛡️ <strong>94.6%</strong> Placement Guarantee</div>
+          <div class="hero-badge" id="badgeDebt">💰 <strong>Zero Debt</strong> Earn-While-Learn</div>
+          <div class="hero-badge" id="badgeQubo">⚛️ <strong>QUBO</strong> Pareto Optimization</div>
+        </div>
+
+        <div class="hero-cta-group">
+          <a href="#profiler" class="btn-quantum-primary" id="heroBtnAssess">
+            <span id="heroBtnAssessText">Launch Dual Assessment</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <button class="btn-quantum-outline" id="heroBtnRunQuantum">
+            <span id="heroBtnRunQuantumText">Run Quantum Annealer</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-visual-card">
+        <img src="assets/hero-quantum-vocational.jpg" alt="Student and family exploring quantum vocational holographic pathways">
+        <div class="hero-visual-overlay">
+          <div class="overlay-stat-item">
+            <h4>₹18k–₹38k/mo</h4>
+            <p id="overlayStipendTitle">Average Early Stipend & Starting Salary</p>
+          </div>
+          <div class="overlay-stat-item" style="text-align: right;">
+            <h4>NEP 2020</h4>
+            <p id="overlayNepTitle">100% Bachelor Credit Equivalence</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1: Dual-Viewport Profiler (Student Aptitude vs Family Constraints) -->
+  <section class="main-section" id="profiler">
+    <div class="section-header">
+      <span class="section-tag" id="profilerTag">Dual Multi-Stakeholder Input</span>
+      <h2 class="section-title" id="profilerTitle">Co-Design the Future: Student & Family Matrix</h2>
+      <p class="section-desc" id="profilerDesc">
+        Traditional counseling focuses solely on the student, ignoring parental anxiety and economic realities. QuantumBase simultaneously profiles both parties to find the mathematically optimal common ground.
+      </p>
+    </div>
+
+    <div class="dual-viewport-grid">
+      <!-- Student Profiler -->
+      <div class="viewport-panel student-panel">
+        <div class="panel-header">
+          <h3>
+            <span>🎓</span> <span id="studentPanelHeader">Student Aptitude & Interests</span>
+          </h3>
+          <span style="font-size: 0.8rem; color: var(--accent-cyan); font-weight: 600;">Vector S[6]</span>
+        </div>
+
+        <div class="panel-preset-pills">
+          <span id="studentArchetypesLabel" style="font-size: 0.78rem; color: var(--text-muted); align-self: center;">Quick Archetypes:</span>
+          <button class="preset-pill active" id="presetEv" data-preset="ev-robotics">EV & Robotics</button>
+          <button class="preset-pill" id="presetBio" data-preset="biomedical">Biomedical Tech</button>
+          <button class="preset-pill" id="presetDrone" data-preset="drone-green">Drone & Green Grid</button>
+          <button class="preset-pill" id="presetCnc" data-preset="cnc-machinist">CNC Precision</button>
+        </div>
+
+        <!-- Student Sliders -->
+        <div class="slider-control-group">
+          <div class="slider-label-row">
+            <span id="lbl_s_dexterity">Spatial & Mechanical Dexterity</span>
+            <span class="slider-val-badge" id="val_s_dexterity">85%</span>
+          </div>
+          <input type="range" id="slider_s_dexterity" min="10" max="100" value="85">
+        </div>
+
+        <div class="slider-control-group">
+          <div class="slider-label-row">
+            <span id="lbl_s_digital">Digital Systems & Robotics Coding</span>
+            <span class="slider-val-badge" id="val_s_digital">88%</span>
+          </div>
+          <input type="range" id="slider_s_digital" min="10" max="100" value="88">
+        </div>
+
+        <div class="slider-control-group">
+          <div class="slider-label-row">
+            <span id="lbl_s_craftsmanship">Craftsmanship & Material Fabrication</span>
+            <span class="slider-val-badge" id="val_s_craftsmanship">72%</span>
+          </div>
+          <input type="range" id="slider_s_craftsmanship" min="10" max="100" value="72">
+        </div>
+
+        <div class="slider-control-group">
+          <div class="slider-label-row">
+            <span id="lbl_s_medicalCare">Bio-Medical & Care Empathy</span>
+            <span class="slider-val-badge" id="val_s_medicalCare">30%</span>
+          </div>
+          <input type="range" id="slider_s_medicalCare" min="10" max="100" value="30">
+        </div>
+
+        <div class="slider-control-group">
+          <div class="slider-label-row">
+            <span id="lbl_s_fieldResilience">Field Resilience & Outdoor Energy Systems</span>
+            <span class="slider-val-badge" id="val_s_fieldResilience">75%</span>
+          </div>
+          <input type="range" id="slider_s_fieldResilience" min="10" max="100" value="75">
+        </div>
+
+        <div class="slider-control-group">
+          <div class="slider-label-row">
+            <span id="lbl_s_enterprise">Micro-Enterprise & Autonomy</span>
+            <span class="slider-val-badge" id="val_s_enterprise">80%</span>
+          </div>
+          <input type="range" id="slider_s_enterprise" min="10" max="100" value="80">
+        </div>
+      </div>
+
+      <!-- Family Decision-Support Matrix -->
+      <div class="viewport-panel family-panel">
+        <div class="panel-header">
+          <h3>
+            <span>👨‍👩‍👦</span> <span id="familyPanelHeader">Family Decision & Reassurance Matrix</span>
+          </h3>
+          <span style="font-size: 0.8rem; color: var(--accent-gold); font-weight: 600;">Utility Vector F[5]</span>
+        </div>
+
+        <div class="panel-preset-pills">
+          <span id="familyScenariosLabel" style="font-size: 0.78rem; color: var(--text-muted); align-self: center;">Family Scenarios:</span>
+          <button class="preset-pill active" id="presetIncome" data-preset="urgent-income">Urgent Household Income</button>
+          <button class="preset-pill" id="presetPrestige" data-preset="prestige-degree">Prestige & Degree Path</button>
+          <button class="preset-pill" id="presetSafety" data-preset="safety-first">Safety & Clean Facility</button>
+        </div>
+
+        <!-- Family Sliders -->
+        <div class="slider-control-group">
+          <div class="slider-label-row">
+            <span id="lbl_f_financialWeight">Year-1 Financial Support Need</span>
+            <span class="slider-val-badge" id="val_f_financialWeight">35% Priority</span>
+          </div>
+          <input type="range" id="slider_f_financialWeight" min="10" max="80" value="35">
+        </div>
+
+        <div class="slider-control-group">
+          <div class="slider-label-row">
+            <span id="lbl_f_safetyWeight">Workplace Safety & Clinical Standards</span>
+            <span class="slider-val-badge" id="val_f_safetyWeight">25% Priority</span>
+          </div>
+          <input type="range" id="slider_f_safetyWeight" min="10" max="80" value="25">
+        </div>
+
+        <div class="slider-control-group">
+          <div class="slider-label-row">
+            <span id="lbl_f_prestigeWeight">Social Prestige (B.Voc / Degree Equivalent)</span>
+            <span class="slider-val-badge" id="val_f_prestigeWeight">20% Priority</span>
+          </div>
+          <input type="range" id="slider_f_prestigeWeight" min="10" max="80" value="20">
+        </div>
+
+        <div class="slider-control-group">
+          <div class="slider-label-row">
+            <span id="lbl_f_placementWeight">Corporate Placement Guarantee</span>
+            <span class="slider-val-badge" id="val_f_placementWeight">20% Priority</span>
+          </div>
+          <input type="range" id="slider_f_placementWeight" min="10" max="80" value="20">
+        </div>
+
+        <div class="slider-control-group">
+          <div class="slider-label-row">
+            <span id="lbl_f_minStipend">Minimum Monthly Stipend Expectation</span>
+            <span class="slider-val-badge" id="val_f_minStipend">₹18,000/mo</span>
+          </div>
+          <input type="range" id="slider_f_minStipend" min="10000" max="25000" step="1000" value="18000">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Quantum-Inspired Optimization Engine -->
+  <section class="main-section" id="quantum-engine">
+    <div class="section-header">
+      <span class="section-tag violet" id="quantumTag">Simulated Quantum Annealing (QUBO)</span>
+      <h2 class="section-title" id="quantumTitle">QuantumBase Multi-Objective Optimization Engine</h2>
+      <p class="section-desc" id="quantumDesc">
+        Resolving non-convex multi-stakeholder conflicts. Classical greedy algorithms often get stuck in parental stigma traps; our simulated quantum annealer uses transverse field tunneling to discover the global Pareto ground state.
+      </p>
+    </div>
+
+    <div class="quantum-engine-card">
+      <div class="quantum-grid-dashboard">
+        <!-- Controls & Hamiltonian formulation -->
+        <div class="quantum-control-box">
+          <div class="hamiltonian-formula-box">
+            <div><strong id="hamiltonianTitle">Hamiltonian Objective:</strong></div>
+            <code>H(x) = α·H<sub>student</sub> + β·H<sub>family</sub> + γ·H<sub>market</sub> - δ·P<sub>friction</sub></code>
+            <div style="font-size: 0.74rem; color: var(--text-muted); margin-top: 0.4rem;">
+              <span id="tunnelingNote">Tunneling Operator: <span class="highlight">Γ(t) ∑ σ<sub>x</sub><sup>(i)</sup></span> | Transverse Field Active</span>
+            </div>
+          </div>
+
+          <div class="slider-control-group">
+            <div class="slider-label-row">
+              <span id="lbl_w_student">Student Passion Weight (α)</span>
+              <span class="slider-val-badge" id="val_w_student">40%</span>
+            </div>
+            <input type="range" id="slider_w_student" min="10" max="70" value="40">
+          </div>
+
+          <div class="slider-control-group">
+            <div class="slider-label-row">
+              <span id="lbl_w_family">Family Consensus Weight (β)</span>
+              <span class="slider-val-badge" id="val_w_family">35%</span>
+            </div>
+            <input type="range" id="slider_w_family" min="10" max="70" value="35">
+          </div>
+
+          <div class="slider-control-group">
+            <div class="slider-label-row">
+              <span id="lbl_w_market">Labor Market Demand Weight (γ)</span>
+              <span class="slider-val-badge" id="val_w_market">25%</span>
+            </div>
+            <input type="range" id="slider_w_market" min="10" max="60" value="25">
+          </div>
+
+          <button id="btnRunQuantum" class="btn-quantum-primary" style="width: 100%; padding: 1rem;">
+            <span id="btnRunQuantumText">⚛️ Execute Quantum Annealing</span>
+          </button>
+        </div>
+
+        <!-- Animated Quantum Landscape Canvas -->
+        <div class="canvas-quantum-container">
+          <canvas id="quantumLandscapeCanvas"></canvas>
+          <div class="quantum-telemetry-overlay">
+            <span><span id="telemetryLblTemp">Temp:</span> <strong id="telemetryTemp">0.04 K</strong></span>
+            <span><span id="telemetryLblEnergy">Ground E:</span> <strong id="telemetryEnergy">0.1420 eV</strong></span>
+            <span><span id="telemetryLblTunnel">Tunneling:</span> <strong id="telemetryTunneling">14 events</strong></span>
+            <span><span id="telemetryLblConsensus">Consensus:</span> <strong id="telemetryScore">96.2%</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Optimal Ranked Vocational Pathways -->
+  <section class="main-section" id="pathways">
+    <div class="section-header">
+      <span class="section-tag" id="pathwaysTag">Pareto-Optimal NSQF Recommendations</span>
+      <h2 class="section-title" id="pathwaysTitle">Verified Vocational Pathways (NSQF Levels 4–7)</h2>
+      <p class="section-desc" id="pathwaysDesc">
+        Career paths ordered by the Quantum Consensus Index. Each pathway provides a direct earn-while-learn timeline, verified placement rate, and parental assurance metrics.
+      </p>
+    </div>
+
+    <div class="careers-grid" id="careersGrid">
+      <!-- Dynamically Populated by js/app.js -->
+    </div>
+
+    <div style="text-align: center; margin-top: 3rem;">
+      <button id="btnGenerateCertificate" class="btn-quantum-primary" style="padding: 1rem 2rem; font-size: 1.05rem;">
+        📜 <span id="btnGenerateCertificateText">Generate Family-Student Consensus Charter</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Section 4: 10-Year Cumulative Financial ROI Simulator -->
+  <section class="main-section" id="roi-simulator">
+    <div class="section-header">
+      <span class="section-tag gold" id="roiTag">Evidence-Based Financial Reality</span>
+      <h2 class="section-title" id="roiTitle">10-Year Cumulative ROI: Degree vs. Dual Vocational Track</h2>
+      <p class="section-desc" id="roiDesc">
+        Debunking the myth that traditional academic degrees automatically yield higher wealth. See the exact break-even age and capital accumulation trajectory.
+      </p>
+    </div>
+
+    <div class="roi-container-grid">
+      <div class="roi-canvas-box">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+          <h4 id="roiChartHeading" style="font-size: 1.1rem; color: #fff;">Net Cumulative Savings (In Lakhs ₹)</h4>
+          <div style="display: flex; gap: 1rem; font-size: 0.78rem;">
+            <span id="roiLegendVoc" style="color: var(--accent-cyan);">● NSQF Dual Vocational Track</span>
+            <span id="roiLegendAca" style="color: var(--accent-rose);">● 4-Year Academic Degree</span>
+          </div>
+        </div>
+        <canvas id="roiChartCanvas" style="width: 100%; height: 320px;"></canvas>
+
+        <!-- ROI Sliders -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border-glass);">
+          <div class="slider-control-group">
+            <div class="slider-label-row">
+              <span id="lbl_roi_tuition">Academic Annual Tuition + Living</span>
+              <span class="slider-val-badge" id="valAcademicTuition" style="color: var(--accent-rose);">₹120k/yr</span>
+            </div>
+            <input type="range" id="sliderAcademicTuition" min="50000" max="300000" step="10000" value="120000">
+          </div>
+          <div class="slider-control-group">
+            <div class="slider-label-row">
+              <span id="lbl_roi_stipend">Vocational Apprenticeship Stipend</span>
+              <span class="slider-val-badge" id="valVocStipend" style="color: var(--accent-cyan);">₹18,500/mo</span>
+            </div>
+            <input type="range" id="sliderVocStipend" min="10000" max="30000" step="1000" value="18500">
+          </div>
+        </div>
+      </div>
+
+      <div class="roi-stats-sidebar">
+        <div class="roi-comparison-card vocational">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <h4 id="roiVocTitle" style="color: var(--accent-cyan); font-size: 1.15rem;">Dual Vocational Track</h4>
+            <span id="roiVocBadge" class="nsqf-badge" style="background: rgba(0,245,212,0.1); color: var(--accent-cyan); border-color: rgba(0,245,212,0.3);">Debt-Free</span>
+          </div>
+          <p id="roiVocDesc" style="font-size: 0.88rem; margin-bottom: 0.65rem;">
+            Starts earning ₹18,500/mo from Month 7. Zero tuition fees due to PMKVY & corporate sponsorship.
+          </p>
+          <div id="roiVocBreakEven" style="font-size: 0.95rem; font-weight: 700; color: #fff;">
+            Break-Even Age: <span style="color: var(--accent-cyan);">19.5 Years</span>
+          </div>
+          <div id="roiVocWealth" style="font-size: 0.82rem; color: var(--accent-emerald); margin-top: 0.35rem;">
+            10-Year Net Wealth: ~₹28.4 Lakhs
+          </div>
+        </div>
+
+        <div class="roi-comparison-card academic">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <h4 id="roiAcaTitle" style="color: var(--accent-rose); font-size: 1.15rem;">Conventional 4-Year Degree</h4>
+            <span id="roiAcaBadge" class="nsqf-badge" style="background: rgba(244,63,94,0.1); color: var(--accent-rose); border-color: rgba(244,63,94,0.3);">Tuition Debt</span>
+          </div>
+          <p id="roiAcaDesc" style="font-size: 0.88rem; margin-bottom: 0.65rem;">
+            Requires 4 years of unpaid tuition & living expenses (-₹7.2L debt). High competitive underemployment at graduation.
+          </p>
+          <div id="roiAcaBreakEven" style="font-size: 0.95rem; font-weight: 700; color: #fff;">
+            Break-Even Age: <span style="color: var(--accent-rose);">26.5 Years</span>
+          </div>
+          <div id="roiAcaWealth" style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.35rem;">
+            10-Year Net Wealth: ~₹11.2 Lakhs
+          </div>
+        </div>
+
+        <div id="roiTakeaway" style="background: rgba(255, 183, 3, 0.08); border: 1px solid rgba(255, 183, 3, 0.25); border-radius: var(--radius-md); padding: 1.1rem; font-size: 0.84rem; color: #FFE6A7;">
+          💡 <strong>Key Takeaway for Parents:</strong> By age 25, the vocational graduate has already accumulated <strong>₹17.2 Lakhs more in liquid capital</strong> and 5 years of verified industry seniority while peers are just clearing initial student loans.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Multilingual Voice / IVR Phone Call Simulator -->
+  <section class="main-section" id="ivr-simulator">
+    <div class="section-header">
+      <span class="section-tag" id="ivrTag">Telephony & Voice-First Accessibility</span>
+      <h2 class="section-title" id="ivrTitle">Multilingual IVR & Voice Counselor Simulator</h2>
+      <p class="section-desc" id="ivrDesc">
+        Rural parents don't need smartphones or English literacy. They can call our toll-free IVR helpline in their native language (Hindi, Marathi, Tamil, Bengali) to hear clear, reassuring answers to their socio-economic questions.
+      </p>
+    </div>
+
+    <div class="ivr-simulator-wrapper">
+      <!-- Simulated Phone Hardware UI -->
+      <div class="phone-device-mockup">
+        <div class="phone-screen-header">
+          <span id="ivrHotlineLabel" style="font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase;">Incoming IVR Hotline</span>
+          <h4 id="ivrCounselorTitle">कौशल सारथी (Hindi)</h4>
+          <div class="call-timer" id="ivrCallTimer">Ready to Dial</div>
+        </div>
+
+        <div class="waveform-animation-box" style="opacity: 0.3;">
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+        </div>
+
+        <div style="text-align: center; padding: 0 1rem;">
+          <p id="ivrCallInstruction" style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.75rem;">Simulate an interactive phone counseling session with speech synthesis:</p>
+          <div class="phone-call-actions">
+            <button class="btn-call-circle green" id="btnStartCall" title="Start Call">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+            </button>
+            <button class="btn-call-circle red" id="btnEndCall" title="End Call">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff"><path d="M12 9c-1.6 0-3.15.25-4.6.72v3.1c0 .39-.23.74-.56.9-.98.49-1.87 1.12-2.66 1.85-.18.18-.43.28-.7.28-.28 0-.53-.11-.71-.29L.29 13.08a.99.99 0 0 1 0-1.41C3.36 8.54 7.45 6.75 12 6.75s8.64 1.79 11.71 4.92c.39.39.39 1.02 0 1.41l-2.48 2.48c-.18.18-.43.29-.71.29s-.52-.11-.7-.28c-.79-.74-1.69-1.36-2.67-1.85-.33-.16-.56-.5-.56-.9v-3.1C15.15 9.25 13.6 9 12 9z"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Transcript & Scenario Selector -->
+      <div class="ivr-transcript-container">
+        <div>
+          <label for="ivrScenarioSelect" id="ivrScenarioLabel" style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); display: block; margin-bottom: 0.5rem;">
+            Select Parental Concern Scenario:
+          </label>
+          <select id="ivrScenarioSelect" class="lang-select-btn" style="width: 100%; padding: 0.75rem; font-size: 0.9rem;">
+            <!-- Populated dynamically -->
+          </select>
+        </div>
+
+        <div id="ivrTranscriptBox" style="background: #070912; border: 1px solid var(--border-glass); border-radius: var(--radius-md); padding: 1.25rem; height: 340px; overflow-y: auto; display: flex; flex-direction: column; gap: 1rem;">
+          <div class="chat-bubble bot-bubble">
+            <strong style="display: block; font-size: 0.76rem; text-transform: uppercase; margin-bottom: 0.2rem;">🤖 AI Counselor:</strong>
+            <span id="ivrDefaultPrompt">Press the green Call button to connect to the IVR voice hotline.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Parent Stigma Busters & Evidence Base -->
+  <section class="main-section" id="myths-facts">
+    <div class="section-header">
+      <span class="section-tag gold" id="stigmaTag">Social Stigma Buster</span>
+      <h2 class="section-title" id="stigmaTitle">Government & Corporate Evidence Base</h2>
+      <p class="section-desc" id="stigmaDesc">
+        Directly addressing the most common societal doubts with verified data from the National Skill Development Corporation (NSDC) and NEP 2020.
+      </p>
+    </div>
+
+    <div class="hubs-grid" id="mythsGrid">
+      <!-- Populated dynamically -->
+    </div>
+  </section>
+
+  <!-- Section 7: Verified Training Hubs Directory -->
+  <section class="main-section" id="training-hubs">
+    <div class="section-header">
+      <span class="section-tag" id="hubsTag">National Infrastructure</span>
+      <h2 class="section-title" id="hubsTitle">Verified Training Hubs & Industry Partners</h2>
+      <p class="section-desc" id="hubsDesc">
+        Centres of Excellence equipped with modern labs, hostel facilities, 100% government fee waivers under PMKVY, and corporate apprenticeship contracts.
+      </p>
+    </div>
+
+    <div class="hubs-grid" id="hubsGrid">
+      <!-- Populated dynamically -->
+    </div>
+  </section>
+
+  <!-- Consensus Certificate Modal -->
+  <div class="modal-backdrop" id="certificateModal">
+    <div class="certificate-card">
+      <div class="certificate-header">
+        <span class="nsqf-badge" id="modalTag" style="margin-bottom: 0.5rem;">Official Consensus Accord</span>
+        <h2 id="modalTitle">Family & Student Vocational Consensus Charter</h2>
+        <p id="modalSubtitle" style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.35rem;">
+          Authenticated via QuantumBase Multi-Objective Optimization Engine
+        </p>
+      </div>
+
+      <div class="certificate-body">
+        <p id="modalBodyLead" style="margin-bottom: 1.25rem;">
+          This certifies that after multi-stakeholder assessment balancing student cognitive aptitude, family financial requirements, safety protocols, and labor market intelligence, the following vocational career path has achieved mutual consensus:
+        </p>
+
+        <div style="background: rgba(0, 245, 212, 0.08); border: 1px solid var(--border-glow); border-radius: var(--radius-md); padding: 1.25rem; margin-bottom: 1.25rem;">
+          <h3 id="certCareerTitle" style="color: var(--accent-cyan); font-size: 1.35rem; margin-bottom: 0.35rem;">
+            Electric Vehicle (EV) Powertrain Specialist
+          </h3>
+          <div style="display: flex; gap: 1rem; font-size: 0.85rem; color: var(--text-secondary);">
+            <span><span id="modalLblDomain">Domain:</span> <strong id="certDomain" style="color: #fff;">Green Energy & EV</strong></span>
+            <span><span id="modalLblLevel">Level:</span> <strong id="certNsqf" style="color: var(--accent-gold);">NSQF Level 5</strong></span>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem; font-size: 0.88rem;">
+          <div><span id="modalLblScore">Pareto Consensus Score:</span> <strong id="certConsensusScore" style="color: var(--accent-emerald);">96.2%</strong></div>
+          <div><span id="modalLblStipend">Guaranteed Apprentice Stipend:</span> <strong id="certStipend" style="color: var(--accent-gold);">₹18,500/month</strong></div>
+          <div><span id="modalLblDate">Issue Date:</span> <strong id="certDate" style="color: #fff;">October 26, 2026</strong></div>
+          <div><span id="modalLblEquivalence">Academic Equivalence:</span> <strong id="modalEquivVal" style="color: var(--accent-cyan);">Lateral 2nd Yr B.Voc / B.Tech</strong></div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; border-top: 1px dashed rgba(255, 255, 255, 0.2); padding-top: 1.5rem; margin-top: 1.5rem;">
+          <div style="text-align: center;">
+            <div style="border-bottom: 1px solid #fff; width: 140px; margin-bottom: 0.35rem;"></div>
+            <span id="modalSigStudent" style="font-size: 0.75rem; color: var(--text-muted);">Student Signature</span>
+          </div>
+          <div style="text-align: center;">
+            <div style="border-bottom: 1px solid #fff; width: 140px; margin-bottom: 0.35rem;"></div>
+            <span id="modalSigParent" style="font-size: 0.75rem; color: var(--text-muted);">Parent / Guardian Signature</span>
+          </div>
+          <div style="text-align: center;">
+            <div style="border-bottom: 1px solid var(--accent-cyan); width: 140px; margin-bottom: 0.35rem;"></div>
+            <span id="modalSigHash" style="font-size: 0.75rem; color: var(--accent-cyan);">QuantumBase Registry Hash</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: flex-end; gap: 1rem; margin-top: 2rem;">
+        <button id="closeCertBtn" class="btn-quantum-outline" style="padding: 0.6rem 1.25rem;">Close</button>
+        <button id="printCertBtn" class="btn-quantum-primary" style="padding: 0.6rem 1.5rem;">🖨️ Print / Save PDF</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer style="background: #04060A; border-top: 1px solid var(--border-glass); padding: 3rem 2rem 2rem; margin-top: 4rem;">
+    <div style="max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;">
+      <div>
+        <h4 style="font-size: 1.1rem; color: #fff; margin-bottom: 0.25rem;">QuantumBase Vocational 360</h4>
+        <p style="font-size: 0.8rem; color: var(--text-muted);">
+          Built for the National Skill Development Mission & Smart India Innovation Pipeline.
+        </p>
+      </div>
+      <div style="font-size: 0.8rem; color: var(--text-muted);">
+        Aligned with <strong style="color: var(--accent-cyan);">NSQF</strong> & <strong style="color: var(--accent-gold);">NEP 2020 Credit Framework</strong>.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/i18n.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/quantum-engine.js"></script>
+  <script src="js/audio-effects.js"></script>
+  <script src="js/voice-simulator.js"></script>
+  <script src="js/roi-calculator.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
